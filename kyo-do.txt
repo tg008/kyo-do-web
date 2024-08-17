@@ -1,1 +1,11 @@
-亀と共同で作るよう
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>サイトタイトル</title>
+</head>
+<body>
+    <h1>記事のタイトル</h1>
+    <p>文章をここに書きます</p>
+</body>
+</html>
