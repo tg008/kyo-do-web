@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>サイトタイトル</title>
 </head>
 <body>
-    <h1>記事のタイトル</h1>
-    <p>文章をここに書きます</p>
+<p>頑張る</p>
+<p>あいうえお</p>
 </body>
 </html>
