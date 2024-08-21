@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="HTML/CSS取扱説明書" />
+</head>
+<body>
+  <h1>HTML&CSS取扱説明書</h1>
+  <p>HTMLとCSSの使い方を紙で書いたもの<p>
+  <p>どうやって使うかをここにまとめとく(備忘録)</p>
+  <img src="https://media.discordapp.net/attachments/938032690366656552/1275327575480074240/IMG_3876.jpg?ex=66c6ce5c&is=66c57cdc&hm=43a02e011fa379653789eca218631aa99bc5e9363382094b3f00d83773b63bcc&" width="600" height="900" alt="CSS" />
+  <img src="https://media.discordapp.net/attachments/938032690366656552/1275693292142596148/IMG_3879.jpg?ex=66c6d176&is=66c57ff6&hm=c28cd0116c90f739bc4f3c5032ebb3ce2ab9991de9586344bc46a378d002a443&" width="600" height="900" alt="HTML" />
+  <p>また何か書いたら更新します</p>
+  </body>
+</html>
