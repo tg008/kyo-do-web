@@ -1,6 +1,9 @@
 body{
     background-color: antiquewhite;
 }
+h1{
+    font-family: 'Times New Roman', Times, serif ;
+}
 #h2,h3,h4{
     font-size:20px; color: #04212f;
 }
