@@ -1,0 +1,22 @@
+container{
+    width: 100%;
+    height: 95%;
+}
+
+article{
+    float: left;
+    width: 75%;
+    height: 95%;
+}
+
+aside{
+    float: right;
+    width: 25%;
+    height: 95%;
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    height: 5%;
+}
