@@ -1,7 +1,9 @@
 body{
-    background-color: hsl(176, 100%, 97%);    
+    background-color: hsl(0, 0%, 100%);    
 }
 h1{
-    background-color: rgb(135, 255, 255);
+    background-color: rgb(41, 41, 41);
 }
-
+h1{
+    color: rgb(255, 255, 255);
+}
