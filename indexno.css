@@ -10,11 +10,6 @@
     justify-content: space-between;
     align-items: center;
 }
-.header-logo{
-    display: block;
-    width: 10px;
-    height: 10px;
-}
 .site-menu ul{
     margin-left: 20px;
     margin-right: 20px;
