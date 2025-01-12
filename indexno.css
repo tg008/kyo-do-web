@@ -16,13 +16,6 @@ h1{
 .目次{
     font-size: larger;
 }
-header {
-    display: flex;
-    width: auto;
-    height: 120px;
-    background-color: rgb(187, 255, 233);
-    align-items: center; 
-}  
 .header-inner {
     max-width: 1200px;
     height: 120px;
