@@ -17,6 +17,7 @@ h1{
     font-size: larger;
 }
 .header-inner {
+    background-color: aliceblue;
     max-width: 1200px;
     height: 120px;
     margin-left: auto;
