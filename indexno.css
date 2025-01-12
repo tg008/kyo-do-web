@@ -31,4 +31,19 @@ h2{
 .目次{
     font-size: larger;
 }
-
+.mokuji{
+    text-align: center;
+}
+.mokuji ul{
+    margin: 0;
+    padding: 0%;
+}
+.mokuji ul li{
+    list-style:none;
+    display: inline-block;
+    width: 10%;/*10px*/
+}
+.mokuji ul li a{
+    text-decoration: none;
+    color: #333;
+}
