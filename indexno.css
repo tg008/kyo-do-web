@@ -36,13 +36,13 @@ h2{
     text-align: start;
 }
 .mokuji ul{
-    margin: auto;
-    padding: auto;
+    margin: 20px;
+    padding: 20px;
 }
 .mokuji ul li{
     list-style:none;
     display: inline-block;
-    width: 5%;/*5px*/
+    width: 10%;/*10px*/
 }
 .mokuji ul li a{
     text-decoration: none;
