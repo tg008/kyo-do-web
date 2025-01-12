@@ -32,11 +32,11 @@ h2{
     font-size: larger;
 }
 .mokuji{
-    text-align: center;
+    text-align: start;
 }
 .mokuji ul{
     margin: auto;
-    padding: auto;
+    padding: none;
 }
 .mokuji ul li{
     list-style:none;
