@@ -12,7 +12,8 @@
 }
 .header-logo{
     display: block;
-    width: 100px;
+    width: 10px;
+    height: 10px;
 }
 .site-menu ul{
     margin-left: 20px;
