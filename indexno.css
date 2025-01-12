@@ -35,8 +35,8 @@ h2{
     text-align: start;
 }
 .mokuji ul{
-    margin: 5px;
-    padding: 5px;
+    margin: auto;
+    padding: auto;
 }
 .mokuji ul li{
     list-style:none;
