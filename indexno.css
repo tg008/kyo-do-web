@@ -30,6 +30,7 @@ h1{
 .header-logo {
     display: block;
     width: 150px;
+    height: 120px;
 }
 .title {
     margin-right: auto;
