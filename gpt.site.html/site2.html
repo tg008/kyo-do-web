@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>屋代高校 生徒向けサイト</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            background-color: #1e40af;
+            color: #ffffff;
+            text-align: center;
+            padding: 0.8rem 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .section {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .highlight {
+            background-color: #e0f2fe;
+            padding: 1rem;
+            border-left: 5px solid #3b82f6;
+        }
+        footer {
+            background-color: #1e3a8a;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>屋代高校 生徒向けサイト</h1>
+    </header>
+    <nav>
+        <a href="#about">学校紹介</a>
+        <a href="#news">お知らせ</a>
+        <a href="#events">行事予定</a>
+        <a href="#results">進学実績</a>
+        <a href="#exams">定期考査</a>
+        <a href="#creators">作成者紹介</a>
+        <a href="#countdown">共通テストカウントダウン</a>
+    </nav>
+    <div class="content">
+        <div id="about" class="section">
+            <h2>学校紹介</h2>
+            <p>屋代高校は長野県の進学校として、理数科や文系の優れた教育を提供しています。</p>
+        </div>
+        <div id="news" class="section">
+            <h2>お知らせ</h2>
+            <p>最新情報は随時更新中です。学校行事や入試情報をご確認ください。</p>
+        </div>
+        <div id="events" class="section">
+            <h2>行事予定</h2>
+            <p>4月 - 入学式<br>5月 - 体育祭<br>6月 - 文化祭</p>
+        </div>
+        <div id="results" class="section">
+            <h2>進学実績</h2>
+            <p>東京大学、名古屋大学、明治大学など多数の合格者を輩出しています。</p>
+        </div>
+        <div id="exams" class="section">
+            <h2>定期考査</h2>
+            <p>次回の定期考査は5月20日～5月24日です。計画的に勉強しましょう。</p>
+        </div>
+        <div id="creators" class="section">
+            <h2>作成者紹介</h2>
+            <p>このサイトは、<strong>田口</strong>と<strong>亀板</strong>が作成しました。</p>
+        </div>
+        <div id="countdown" class="section highlight">
+            <h2>共通テストまでの日数</h2>
+            <p>残り<span id="days-count"></span>日</p>
+            <script>
+                function getCountdown() {
+                    const testDate = new Date('2026-01-17');
+                    const today = new Date();
+                    const diffTime = testDate - today;
+                    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+                    document.getElementById('days-count').innerText = diffDays;
+                }
+                getCountdown();
+            </script>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 屋代高校. All Rights Reserved.
+    </footer>
+</body>
+</html>
