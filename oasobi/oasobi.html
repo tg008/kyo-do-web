@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>遊び心ある個人ブログ</title>
+    <title>参考書ルートガイド</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: #222;
+            background: #121212;
             color: white;
             text-align: center;
             padding: 20px;
@@ -19,73 +19,97 @@
             font-size: 42px;
             font-weight: bold;
         }
-        .blog-card {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            border-radius: 12px;
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .menu button {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .menu button:hover {
+            background: white;
+            color: black;
+        }
+        .content {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .content.active {
+            display: block;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
             padding: 20px;
+            border-radius: 10px;
             margin: 20px auto;
             width: 80%;
             max-width: 400px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        .blog-card:hover {
+        .card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
         }
-        .neon-btn {
-            background: transparent;
-            color: #0ff;
-            border: 2px solid #0ff;
-            padding: 12px 24px;
-            font-size: 18px;
-            cursor: pointer;
-            border-radius: 8px;
-            position: relative;
-            overflow: hidden;
-            transition: 0.4s;
-        }
-        .neon-btn:hover {
-            box-shadow: 0 0 20px #0ff;
-        }
-        .wave-btn {
-            position: relative;
-            background: #4caf50;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 18px;
-            border-radius: 8px;
-            cursor: pointer;
-            overflow: hidden;
-        }
-        .wave-btn::before {
-            content: "";
-            position: absolute;
-            width: 300%;
-            height: 300%;
-            top: 50%;
-            left: 50%;
-            background: rgba(255, 255, 255, 0.3);
-            transition: transform 0.5s;
-            transform: translate(-50%, -50%) scale(0);
-            border-radius: 50%;
-        }
-        .wave-btn:active::before {
-            transform: translate(-50%, -50%) scale(1);
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
-    <h1>書くことないからぱっと思いついた参考書ルートでも書く 🎨</h1>
+    <h1>📖 参考書ルートガイド 🚀</h1>
     
-    <div class="blog-card">
-        <h2>書くことない</h2>
-        <p>これはブログの記事の内容です！楽しく読んでいってね！</p>
+    <div class="menu">
+        <button onclick="showContent('math')">数学</button>
+        <button onclick="showContent('physics')">物理</button>
+        <button onclick="showContent('chemistry')">化学</button>
+        <button onclick="showContent('history')">日本史</button>
     </div>
     
-    <button class="neon-btn">光るボタン</button>
-    <button class="wave-btn">クリック波紋</button>
+    <div id="math" class="content active">
+        <div class="card">
+            <h2>数学の参考書</h2>
+            <p>📘 青チャート → 1対1対応の演習 → 上級問題集</p>
+        </div>
+    </div>
+    
+    <div id="physics" class="content">
+        <div class="card">
+            <h2>物理の参考書</h2>
+            <p>📗 セミナー → 良問の風 → 名門の森</p>
+        </div>
+    </div>
+    
+    <div id="chemistry" class="content">
+        <div class="card">
+            <h2>化学の参考書</h2>
+            <p>📕 セミナー → 重要問題集 → 新演習</p>
+        </div>
+    </div>
+    
+    <div id="history" class="content">
+        <div class="card">
+            <h2>日本史の参考書</h2>
+            <p>📙 教科書 → 1問1答 → 実況中継</p>
+        </div>
+    </div>
+    
+    <script>
+        function showContent(id) {
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
 </body>
 </html>
+
