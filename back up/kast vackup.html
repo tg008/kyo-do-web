@@ -83,15 +83,6 @@
             width: 200px;
             height: auto;
         }
-        .fade-in {
-          opacity: 0;
-          transform: translateY(20px);
-          transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .fade-in.show {
-          opacity: 1;
-          transform: translateY(0);
-        }
     </style>
 </head>
 <body>
@@ -113,7 +104,7 @@
              <p>屋代高校は、長野県千曲市にある公立の進学校で、SSH[スーパーサイエンスハイスクール]に指定されており、理数教育に力を入れている。
                 創立は1919年で、伝統ある学校の一つ。
                 難関国公立大学や有名私立大学への進学実績があり、特に理系志望者が多い。
-                <br><strong><div class="fade-in">進学校と呼ぶにふさわしい学校である。</div></strong>
+                <br><strong>進学校と呼ぶにふさわしい学校である。</strong>
             </p>
          </div>
         <div id="news" class="section">
@@ -234,19 +225,5 @@
     <footer>
         &copy; 2025 屋代高校. All Rights Reserved.
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const fadeElements = document.querySelectorAll(".fade-in");
-          const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-              }
-            });
-          });
-        
-          fadeElements.forEach(el => observer.observe(el));
-        });
-        </script>
 </body>
 </html>
