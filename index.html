@@ -211,7 +211,9 @@
             </div>
         </div>
         <div id="countdown" class="section">
-
+            <div id="counter_wrap"><div id="counter"></div>
+            <div><script>let target  = new Date(2025, 5, 28, 0, 0, 0);const countdown = ()=>{const targetObj = document.getElementById("counter");const now = new Date();const differ = target.getTime() - now.getTime();if(differ < 0){targetObj.innerHTML = "キャンペーンは終了しました。";return false;};const myDay = Math.floor(differ / 1000 / 60 / 60 / 24);const myHour = Math.floor(differ / 1000 / 60 / 60 % 24);const myMin = Math.floor(differ / 1000 / 60 % 60);const mySec = Math.floor(differ / 1000 % 60);const myMsec= Math.floor(differ);targetObj.innerHTML = "鳩祭まで" + "<br>" + String(myDay).padStart(2, '0') + '日' + String(myHour).padStart(2, '0') + '時間' + String(myMin).padStart(2, '0') + '分' + String(mySec).padStart(2, '0') +'秒'+"鳩祭！！！！！！";if(differ < 0){clearInterval(countdown);};};setInterval(countdown, 1);</script></div>
+            <style>#counter{display:block; max-width:100%; margin:0 auto; width:680px; padding:20px 15px 20px; color:#000000; background:#FFFFFF; text-align:center; font-size:20px; line-height:1.5em; font-weight:bold;}</style></div>
         </div>
         <div id="question" class="section">
             <h2>質問募集</h2>
