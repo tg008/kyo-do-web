@@ -122,6 +122,106 @@
             document.getElementById(id).classList.add('active');
         }
     </script>
+
+<section class="section" id="subject-section">
+    <h2>科目ごとの参考書ルート</h2>
+    <div class="menu">
+      <button onclick="showContent('math')">数学</button>
+      <button onclick="showContent('physics')">物理</button>
+      <button onclick="showContent('chemistry')">化学</button>
+      <button onclick="showContent('history')">日本史</button>
+    </div>
+    <div id="math" class="content active">
+      <div class="card">
+        <h3>数学の参考書</h3>
+        <p>例：<br>
+          ・青チャート<br>
+          ・演習問題集<br>
+          ・上級問題集</p>
+      </div>
+    </div>
+    <div id="physics" class="content">
+      <div class="card">
+        <h3>物理の参考書</h3>
+        <p>例：<br>
+          ・セミナーシリーズ<br>
+          ・良問の風<br>
+          ・名門の森</p>
+      </div>
+    </div>
+    <div id="chemistry" class="content">
+      <div class="card">
+        <h3>化学の参考書</h3>
+        <p>例：<br>
+          ・セミナーシリーズ<br>
+          ・重要問題集<br>
+          ・新演習</p>
+      </div>
+    </div>
+    <div id="history" class="content">
+      <div class="card">
+        <h3>日本史の参考書</h3>
+        <p>例：<br>
+          ・教科書解説<br>
+          ・1問1答<br>
+          ・実践問題集</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 大学ランク別参考書ルートセクション -->
+  <section class="section" id="university-section">
+    <h2>大学ランク別参考書ルート</h2>
+    <div class="menu">
+      <button onclick="showUniContent('top-universities')">トップレベル</button>
+      <button onclick="showUniContent('mid-universities')">中堅大学</button>
+      <button onclick="showUniContent('local-universities')">地方大学</button>
+    </div>
+    <div id="top-universities" class="content active">
+      <div class="card">
+        <h3>トップレベル大学向け</h3>
+        <p>難関大学を目指すための参考書ルート<br>
+          例：<br>
+          ・一橋・東京大対策<br>
+          ・高度な問題演習<br>
+          ・オリンピックレベルのチャレンジ問題</p>
+      </div>
+    </div>
+    <div id="mid-universities" class="content">
+      <div class="card">
+        <h3>中堅大学向け</h3>
+        <p>実力に合わせた、基礎から応用までの参考書ルート<br>
+          例：<br>
+          ・定番の参考書シリーズ<br>
+          ・過去問演習<br>
+          ・応用問題集</p>
+      </div>
+    </div>
+    <div id="local-universities" class="content">
+      <div class="card">
+        <h3>地方大学向け</h3>
+        <p>基礎を固めるための優しい参考書ルート<br>
+          例：<br>
+          ・入門書<br>
+          ・基礎演習問題集<br>
+          ・わかりやすい解説書</p>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    // 科目ごとのメニュー切り替え
+    function showContent(id) {
+      document.querySelectorAll('#subject-section .content').forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+    
+    // 大学ランク別メニュー切り替え
+    function showUniContent(id) {
+      document.querySelectorAll('#university-section .content').forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
 
