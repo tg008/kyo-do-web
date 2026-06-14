@@ -1,6 +1,17 @@
 header {
   background-color: orange;
   text-align: center;
-  font-color: white;
-  height: 200px;
+  color: white;
+  height: 200px; 
+  padding: 32px;
 }
+
+nav{
+  width: 200px;
+  padding: 32px;
+  position: left;
+}
+
+main{
+  padding: 32px;
+  
