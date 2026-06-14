@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>サンプル</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      タイトル
+    </header>
+    <div class="content">
+      <nav>
+        <a>リンク 1</a>
+        <a>リンク 2</a>
+        <a>リンク 3</a>
+        <a>リンク 4</a>
+      </nav>
+      <main>
+        <h1>見出し</h1>
+        <p>本文本文本文本文本文……</p>
+      </main>
+    </div>
+  </body>
+</html>
