@@ -1,8 +1,8 @@
 head {
+  background-color: orange;
+  text-align: center;
+  font-color: white;
   position: top;
   height: 200px;
   width: 100%;
-  background-color: orange;
-  text-align: center;
-  font-color: #000000;
 }
